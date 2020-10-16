@@ -1,0 +1,71 @@
+
+--------------------------------User calls-----------------------------------------
+
+Get All Users(GET)	: http://localhost:9091/InterviewTracking/User/
+
+Get User By ID(GET) : http://localhost:9091/InterviewTracking/User/{id}
+
+Add User(POST)		: http://localhost:9091/InterviewTracking/User/add
+
+Delete User(DEL)	: http://localhost:9091/InterviewTracking/User/delete/{id}
+
+--------------------------------Interview details calls--------------------------------------
+
+Get All Interview Details(GET)					: http://localhost:9091/InterviewTracking/Interview/
+
+Get count of Interview Details(GET)				: http://localhost:9091/InterviewTracking/Interview/count
+
+Get Interview Details By ID(GET) 				: http://localhost:9091/InterviewTracking/Interview/{id}
+
+Get Interview by Interviewer and interview name : http://localhost:9091/InterviewTracking/Interview/{interviewerName}/{interviewName}
+
+Add Interview Details(POST)						: http://localhost:9091/InterviewTracking/Interview/add
+
+Delete Intervew Details(DEL)					: http://localhost:9091/InterviewTracking/Interview/delete/{id}
+
+Get Interview Details by interviewer Name(GET)  : http://localhost:9091/InterviewTracking/Interview/InterviewerName/{name}
+
+Get Interview Details by interview Name(GET)    : http://localhost:9091/InterviewTracking/Interview/InterviewName/{name}
+
+Update interview details status on fly(PUT)		: http://localhost:9091/InterviewTracking/Interview/UpdateStatus/{id}/{Status}
+
+
+---------------------------------Interview Attendee Calls -----------------------------------------------
+
+Get All Interview Attendee(GET) 			 	   : http://localhost:9091/InterviewTracking/attendee/
+
+Get Total interviews(GET) 		 			 	   : http://localhost:9091/InterviewTracking/attendee/interviewscount
+
+Add Attendee to interview(POST)	 			 	   : http://localhost:9091/InterviewTracking/attendee/add/{interviewId}/{userID}
+
+Get Attendee by Interview ID(GET)				   : http://localhost:9091/InterviewTracking/attendee/Interview/{id}
+
+Get Attendee by User ID(GET)	 				   : http://localhost:9091/InterviewTracking/attendee/User/{id}
+
+Get No of Interviews attended by user by id 	   :  http://localhost:9091/InterviewTracking/attendee/UserAttendCount/{id}
+
+Get No of Interviews conducted for interview by id : http://localhost:9091/InterviewTracking/attendee/InterviewConductedCount/{id}
+
+User record format to add
+
+{
+    "firstName": "Test Firstname",
+    "lastName": "Test Last Name",
+    "email": "test@gmail.com",
+    "mobile": "9215648999"
+}
+
+Interview record Format to add
+
+{
+      "interviewerName": "Interviewer for C sharp",
+        "interviewName": "C sharp",
+        "userSkills": "C sharp",
+        "interviewStatus": "Passed",
+        "remarks": "Proceed for further rounds"
+}
+
+
+
+
+
